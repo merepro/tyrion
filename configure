@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Installing necessary python packages.
+pip install -r requirements.txt
