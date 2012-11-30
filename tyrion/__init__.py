@@ -13,8 +13,10 @@ db = SQLAlchemy(app)
 def not_found(error):
     return render_template('404.html', error=error), 404
 
-from app.users.views import mod as usersModules
-app.register_blueprint(usersModules)
+
+#Loading user modules
+#from app.users.views import mod as usersModules
+#app.register_blueprint(usersModules)
 
 @app.before_request
 def before_request():
@@ -24,3 +26,8 @@ def before_request():
     g.user = None
     if 'user_id' in session:
         g.user = User.query.get(session['user_id'])
+
+@app.route('/')
+@app.route('/hello/<name>')
+def hello(name=None):
+  return render_template('hello.html', name=name)
