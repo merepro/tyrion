@@ -28,6 +28,5 @@ def before_request():
         g.user = User.query.get(session['user_id'])
 
 @app.route('/')
-@app.route('/hello/<name>')
-def hello(name=None):
-  return render_template('hello.html', name=name)
+def hello():
+    return render_template('home.html')
