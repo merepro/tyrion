@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+    {% block title %}Hans{% endblock %}
+    {% block header %} 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span2 offset1">
+                        <h4 class="text">SatoriEnd</h4>
+    
+                <!--Sidebar content-->
+                    </div>
+                    <div class="span4 offset5">
+                        <ul id="nav">
+                            <li id="nav-home" title="Home">
+                                <a href="/">Home</a>
+                            </li>
+                            <li id="nav-about" title="About">
+                                <a href="./about">About</a>
+                            </li>
+                            <li id="nav-resume" title="Resume">
+                                 <a href="./resume">Resume</a>
+                            </li>
+
+                        </ul>
+                    <!--Body content-->
+                    </div>
+                </div>
+          </div>    
+     </div>
+    </div>
+    
+    {% endblock %}
+
+    {% block content %}
+        <div class="container">
+            <img src='http://placekitten.com/800/300' id="banner">
+            <div class="row">
+                <div class="span9 offset1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel elit sed purus consectetur facilisis et quis lorem. Aliquam erat volutpat. Quisque dui enim, pretium vel porta quis, gravida ut nisi. Maecenas molestie, risus et sagittis semper, nulla eros aliquam libero, vitae malesuada ligula lectus eu mauris. Sed elementum, erat et lobortis fringilla, ipsum felis viverra arcu, vitae condimentum eros eros quis risus. In ultricies magna quis odio varius non mollis lorem varius. Mauris ut neque felis. Curabitur auctor erat at nisl gravida non venenatis ante imperdiet. Etiam malesuada luctus nulla, ac rhoncus mi scelerisque at. Nullam a justo id lacus blandit mattis in ut mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    {% endblock %}
