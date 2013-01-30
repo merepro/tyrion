@@ -7,14 +7,18 @@ body{
     position:relative;
     margin-left:130px;
     top:50px;
-    padding:10px;
+    padding-bottom:10px;
 }
 
 #content{
     color: #FFF;
     position:relative;
+    display:block;
 }
 
+.container{
+    height: 100%;
+}
 .row p{
     position:relative;
     top:50px;
@@ -49,9 +53,16 @@ ul#nav li{
     padding-right:10px;
 }
 
+
+ul#nav li a:hover{
+    color: #6594FF;
+    text-decoration:none;
+}
+
 a{
     color: #ADBBCA;
 }
+
 a:hover{
     text-decoration:none;
 }

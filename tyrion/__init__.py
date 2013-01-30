@@ -28,5 +28,13 @@ def before_request():
         g.user = User.query.get(session['user_id'])
 
 @app.route('/')
-def hello():
+def home():
     return render_template('home.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/resume')
+def resume():
+    return render_template('resume.html')
